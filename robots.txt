@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://ojasviashishchauhan.github.io/BlockIT/sitemap.xml
+Sitemap: https://blockit.dharaik.in/sitemap.xml
 
 # Block access to admin areas (if any are added later)
 Disallow: /admin/
