@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=380, initial-scale=1.0, user-scalable=no">
+    <title>BlockIT Pro</title>
+    <link rel="stylesheet" href="popup.css">
+    <style>
+        /* Extension-specific fixes */
+        html, body {
+            width: 380px !important;
+            max-width: 380px !important;
+            min-width: 380px !important;
+            overflow-x: hidden !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="popup-container">
+        <header class="header">
+            <div class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2L2 7V17L12 22L22 17V7L12 2Z" stroke="currentColor" stroke-width="2"/>
+                    <path d="M12 8V16" stroke="currentColor" stroke-width="2"/>
+                    <path d="M8 12H16" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                <h1>BlockIT Pro</h1>
+            </div>
+            <div class="version">v2.0.0</div>
+        </header>
+
+        <main class="main-content">
+            <div class="toggle-section">
+                <div class="protection-status">
+                    <div class="status-indicator" id="statusIndicator"></div>
+                    <span class="status-text" id="statusText">Protection Active</span>
+                </div>
+                <button class="toggle-button" id="toggleButton">
+                    <div class="toggle-slider"></div>
+                </button>
+            </div>
+
+            <div class="current-site" id="currentSite">
+                <div class="site-info">
+                    <span class="site-label">Current site:</span>
+                    <span class="site-url" id="siteUrl">Loading...</span>
+                </div>
+            </div>
+
+            <div class="protection-info">
+                <div class="shield-container">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" class="shield-icon" id="shieldIcon">
+                        <path d="M12 22S2 19 2 12V5L12 2L22 5V12C22 19 12 22 12 22Z" stroke="currentColor" stroke-width="2" fill="currentColor" fill-opacity="0.1"/>
+                        <path d="M9 12L11 14L15 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="protection-message">
+                    <h3 id="protectionTitle">🛡️ You are protected!</h3>
+                    <p id="protectionDescription">BlockIT Pro is actively blocking ads, trackers, and unwanted content to keep your browsing experience clean and fast.</p>
+                </div>
+            </div>
+
+            <div class="features-section">
+                <div class="feature-item">
+                    <div class="feature-icon">🚫</div>
+                    <span>Ads Blocked</span>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔒</div>
+                    <span>Privacy Protected</span>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <span>Faster Browsing</span>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Inspired by uBlock Origin's efficiency</p>
+        </footer>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html> 
