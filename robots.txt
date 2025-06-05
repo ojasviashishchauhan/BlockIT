@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://blockit-pro.com/sitemap.xml
+
+# Block access to admin areas (if any are added later)
+Disallow: /admin/
+Disallow: /private/
+
+# Allow search engines to access all main content
+Allow: /index.html
+Allow: /styles.css
+Allow: /script.js
+Allow: /assets/
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1 
