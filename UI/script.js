@@ -344,4 +344,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
     console.log('🛡️ BlockIT Pro website loaded successfully!');
     console.log('💡 Try the Konami code for a surprise!');
+    
+    // Handle Privacy Policy URL Fragment
+    function handlePrivacyRedirect() {
+        const hash = window.location.hash;
+        if (hash === '#privacy') {
+            // Redirect to privacy policy page
+            window.location.href = 'privacy-policy.html';
+        }
+    }
+    
+    // Check for privacy fragment on page load
+    handlePrivacyRedirect();
+    
+    // Listen for hash changes
+    window.addEventListener('hashchange', handlePrivacyRedirect);
 }); 
