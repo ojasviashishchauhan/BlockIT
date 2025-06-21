@@ -55,6 +55,22 @@
       gtag('config', 'AW-17040247112');
     </script>
     
+    <!-- Event snippet for Website traffic conversion page -->
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-17040247112/XL8MCOre2d8aEMiStr0_',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
+    
     <!-- Schema.org JSON-LD for SEO -->
     <script type="application/ld+json">
     {
@@ -94,7 +110,7 @@
                     <a href="#features" class="nav-link">Features</a>
                     <a href="#how-it-works" class="nav-link">How It Works</a>
                     <a href="#testimonials" class="nav-link">Reviews</a>
-                    <a href="https://chromewebstore.google.com/detail/blockit-pro/moopbififgejmfkjpfdncodcneehgboi" class="cta-button" target="_blank" rel="noopener">
+                    <a href="https://chromewebstore.google.com/detail/blockit-pro/moopbififgejmfkjpfdncodcneehgboi" class="cta-button" target="_blank" rel="noopener" onclick="return gtag_report_conversion('https://chromewebstore.google.com/detail/blockit-pro/moopbififgejmfkjpfdncodcneehgboi')">
                         <i class="fab fa-chrome"></i> Install Now
                     </a>
                 </div>
@@ -137,7 +153,7 @@
                     </div>
                 </div>
                 <div class="hero-cta">
-                    <a href="https://chromewebstore.google.com/detail/blockit-pro/moopbififgejmfkjpfdncodcneehgboi" class="primary-button" target="_blank" rel="noopener">
+                    <a href="https://chromewebstore.google.com/detail/blockit-pro/moopbififgejmfkjpfdncodcneehgboi" class="primary-button" target="_blank" rel="noopener" onclick="return gtag_report_conversion('https://chromewebstore.google.com/detail/blockit-pro/moopbififgejmfkjpfdncodcneehgboi')">
                         <i class="fab fa-chrome"></i>
                         Add to Chrome - Free
                         <i class="fas fa-arrow-right"></i>
@@ -364,7 +380,7 @@
                 <h2>Ready to Block Ads Forever?</h2>
                 <p>Join thousands of users enjoying faster, safer browsing with BlockIT Pro</p>
                 <div class="cta-buttons">
-                    <a href="https://chromewebstore.google.com/detail/blockit-pro/moopbififgejmfkjpfdncodcneehgboi" class="primary-button large" target="_blank" rel="noopener">
+                    <a href="https://chromewebstore.google.com/detail/blockit-pro/moopbififgejmfkjpfdncodcneehgboi" class="primary-button large" target="_blank" rel="noopener" onclick="return gtag_report_conversion('https://chromewebstore.google.com/detail/blockit-pro/moopbififgejmfkjpfdncodcneehgboi')">
                         <i class="fab fa-chrome"></i>
                         Install BlockIT Pro Now
                         <i class="fas fa-arrow-right"></i>
@@ -404,7 +420,7 @@
                         <h4>Product</h4>
                         <a href="#features">Features</a>
                         <a href="#how-it-works">How It Works</a>
-                        <a href="https://chromewebstore.google.com/detail/blockit-pro/moopbififgejmfkjpfdncodcneehgboi" target="_blank">Install</a>
+                        <a href="https://chromewebstore.google.com/detail/blockit-pro/moopbififgejmfkjpfdncodcneehgboi" target="_blank" onclick="return gtag_report_conversion('https://chromewebstore.google.com/detail/blockit-pro/moopbififgejmfkjpfdncodcneehgboi')">Install</a>
                     </div>
                     <div class="footer-column">
                         <h4>Support</h4>
